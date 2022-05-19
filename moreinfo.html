@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Info</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="upper-bar">
+      <!-- div for logo and app name -->
+      <div id="title">
+        <img src="logo.jpg" alt="" height="30px" />
+        <h1 style="margin-bottom: -28px">The</h1>
+        <h1>Meal Center</h1>
+      </div>
+
+      <!-- <form > -->
+      <!-- div for search bar -->
+      <div id="for-search">
+        <!-- <form action="" autocomplete="off"> -->
+        <input
+          type="text"
+          autocomplete="off"
+          onkeyup="listing()"
+          id="search"
+          value=""
+          placeholder="Search Dishes"
+        />
+
+        <button type="submit" id="s-btn" onclick="searchResult()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- the list for suggestions injected by javascript -->
+        <ul class="list"></ul>
+
+        <!-- </form> -->
+      </div>
+      <!-- </form> -->
+      <!-- button which when clicked opens my favorite page -->
+      <a href="myfav.html"
+        ><button id="fav">
+          <span><i class="fa-solid fa-heart"></i></span> My Favourite Dishes
+        </button></a
+      >
+    </section>
+
+    <section id="dis-details"></section>
+  </body>
+  <script src="js/more.js"></script>
+  <script src="js/script.js"></script>
+</html>

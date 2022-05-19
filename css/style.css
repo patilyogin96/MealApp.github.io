@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+body{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+#upper-bar{
+    height: 18vh;
+    width: 100vw;
+    background-color: rgb(8, 209, 235);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: absolute;
+    left:-17px ;
+}
+#title{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    /* display: flex;
+    flex-direction: column; */
+}
+
+#title img{
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    height: 80px;
+}
+
+input {
+    width: 15rem;
+    height: 29px;
+    /* border-radius: 5px; */
+    font-size: 1rem;
+    padding: 3px;
+    margin: 4px;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    border: 1px solid rgb(255, 255, 255);
+    cursor:text;
+    border-bottom: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+#s-btn{
+    position: relative;
+    top: 1px;
+    margin: -10px;
+    width: 36px;
+    height: 37px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+/* styling search list */
+
+ul{
+    list-style: none;
+}
+
+.list{
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 200px;
+    margin-top: -4px;
+    width: 243px;
+    position: relative;
+    left: 2%;
+    
+
+}
+
+ul li{
+    padding: 5px;
+}
+
+
+
+
+/* styling fav button */
+#fav{
+    margin-left: 40px;
+    height: 28px;
+    border-radius: 5px;
+    width: 175px;
+    border: 2px solid #ffffff;
+    background: #42449c;
+    font-size: 15px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.fa-heart{
+    color: red;
+}
+
+#fav:hover{
+    
+    color: rgb(250, 2, 2);
+  
+}
+
+
+/* styling the dish list */
+#display-bar{
+    position: absolute;
+    top: 19%;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+}
+.dish-card{
+    width: 70vw;
+    height: 38vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 3px solid rgb(8, 209, 235);
+    margin: 10px;
+    border-radius: 10px;
+   position: relative;
+   left: 20%;
+   box-shadow: 5px 5px 5px rgb(192, 187, 187);
+   background-color: aliceblue;
+}
+
+#img-section{
+    margin-left: 13px;
+}
+
+#info-section{
+    margin-left: 13px;
+}
+
+#img-section img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+   
+
+}
+
+/* styling dish-card buttons */
+
+#know-more{
+    height: 30px;
+    width: 94px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    border-radius: 5px;
+    background-color: #0037ff;
+    border: 2px solid rgb(8, 209, 235);
+    cursor: pointer;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 15px;
+   
+}
+
+#add-fav{
+    position: absolute;
+    top: 222px;
+    /* position: absolute; */
+    left: 48px;
+    height: 25px;
+    font-size: 14px;
+    width: 133px;
+    border: 1px solid rgb(8, 209, 235);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(131, 133, 231);
+    color: white;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+
+}
+
+#add-fav:hover{
+    color: rgb(245, 86, 86);
+    background-color: aliceblue;
+}
+
+#info-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+
+
+
+/* Styling more info page */
+
+ #dis-details{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+} 
+
+
+.more-info-container{
+    position: absolute;
+    top: 20%;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(8, 209, 235);
+    margin: 10px;
+    border-radius: 10px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+
+#detail-img img{
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 10px;
+}
+
+#p-of-inst p{
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+#fav-display-bar{
+    position: absolute;
+    top: 20%;
+
+}
+
+#rem-fav{
+
+    height: 30px;
+    width: 165px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    border-radius: 5px;
+    background-color: #0037ff;
+    border: 2px solid rgb(8, 209, 235);
+    cursor: pointer;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 14px;
+
+}
